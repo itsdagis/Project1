@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Category - My eCommerce Store</title>
+    <link rel="stylesheet" href="../css/add_category.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <!-- Include Header -->
+   <!-- Include Header -->
+       <!-- Include Header -->
+       <header>
+        <div class="header-container">
+            <h1 class="logo">Admin Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Home</a></li>
+                    <li><a href="manage_products.html">Products</a></li>
+                    <li><a href="manage_categories.html">Categories</a></li>
+                    <li><a href="manage_customers.html">Customers</a></li>
+                    <li><a href="manage_orders.html">Orders</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Add New Category</h2>
+            <form action="submit_category.html" method="POST">
+                <label for="category-name">Category Name:</label>
+                <input type="text" id="category-name" name="category-name" required>
+
+                <label for="category-description">Description:</label>
+                <textarea id="category-description" name="category-description" rows="4" required></textarea>
+
+                <button type="submit" class="btn">Add Category</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Include Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2023 My eCommerce Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Category - My eCommerce Store</title>
+    <link rel="stylesheet" href="../css/edit_category.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1 class="logo">Admin Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Home</a></li>
+                    <li><a href="manage_products.html">Products</a></li>
+                    <li><a href="manage_categories.html">Categories</a></li>
+                    <li><a href="manage_customers.html">Customers</a></li>
+                    <li><a href="manage_orders.html">Orders</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Edit Category</h2>
+            <form action="update_category.html" method="POST">
+                <input type="hidden" name="category-id" value="1"> <!-- Hidden field to pass the category ID -->
+
+                <label for="category-name">Category Name:</label>
+                <input type="text" id="category-name" name="category-name" value="Electronics" required>
+
+                <label for="category-description">Description:</label>
+                <textarea id="category-description" name="category-description" rows="4" required>Devices and gadgets</textarea>
+
+                <button type="submit" class="btn">Update Category</button>
+            </form>
+
+          
+        </div>
+    </main>
+
+    <!-- Include Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2023 My eCommerce Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

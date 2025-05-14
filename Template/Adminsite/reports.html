@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - My eCommerce Store</title>
+    <link rel="stylesheet" href="../css/report.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <!-- Include Header -->
+    <header>
+        <div class="header-container">
+            <h1 class="logo">Admin Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Home</a></li>
+                    <li><a href="manage_products.html">Products</a></li>
+                    <li><a href="manage_categories.html">Categories</a></li>
+                    <li><a href="manage_customers.html">Customers</a></li>
+                    <li><a href="manage_orders.html">Orders</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+           
+                <div class="catagory">
+                    <select id="report-type" aria-label="Filter by category" class="option">
+                        <option value="">Select Report</option>
+                        <option value="sales">Sales Report</option>
+                        <option value="order">Order Report</option>
+                        <option value="customer">Customer Activity Report</option>
+                    </select>
+                </div>
+           
+            
+            <div class="report-section">
+                <h3>Sales Report</h3>
+                <p>This report provides an overview of total sales in a given period.</p>
+                <form action="generate_report.html" method="POST">
+                    <label for="start-date">Start Date:</label>
+                    <input type="date" id="start-date" name="start-date" required>
+
+                    <label for="end-date">End Date:</label>
+                    <input type="date" id="end-date" name="end-date" required>
+
+                    <button type="submit" class="btn">Generate Sales Report</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Include Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2023 My eCommerce Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

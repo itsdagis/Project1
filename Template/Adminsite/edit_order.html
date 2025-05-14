@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Order - My eCommerce Store</title>
+    <link rel="stylesheet" href="../css/edit_order.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <!-- Include Header -->
+    <header>
+        <div class="header-container">
+            <h1 class="logo">Admin Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Home</a></li>
+                    <li><a href="manage_products.html">Products</a></li>
+                    <li><a href="manage_categories.html">Categories</a></li>
+                    <li><a href="manage_customers.html">Customers</a></li>
+                    <li><a href="manage_orders.html">Orders</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Edit Order</h2>
+            <form action="update_order.html" method="POST">
+                <input type="hidden" name="order-id" value="1001"> <!-- Hidden field to pass the order ID -->
+
+                <label for="customer-name">Customer Name:</label>
+                <input type="text" id="customer-name" name="customer-name" value="John Doe" required>
+
+                <label for="order-date">Order Date:</label>
+                <input type="date" id="order-date" name="order-date" value="2023-10-01" required>
+
+                <label for="order-status">Status:</label>
+                <select id="order-status" name="order-status" required>
+                    <option value="Processing">Processing</option>
+                    <option value="Shipped">Shipped</option>
+                    <option value="Delivered">Delivered</option>
+                    <option value="Cancelled">Cancelled</option>
+                </select>
+
+                <label for="total-amount">Total Amount:</label>
+                <input type="text" id="total-amount" name="total-amount" value="$150.00" required>
+
+                <button type="submit" class="btn">Update Order</button>
+            </form>
+
+            <button class="btn" onclick="window.location.href='manage_orders.html'">Back to Orders</button>
+        </div>
+    </main>
+
+    <!-- Include Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2023 My eCommerce Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

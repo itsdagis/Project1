@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Customer - My eCommerce Store</title>
+    <link rel="stylesheet" href="../css/edit_customer.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1 class="logo">Admin Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Home</a></li>
+                    <li><a href="manage_products.html">Products</a></li>
+                    <li><a href="manage_categories.html">Categories</a></li>
+                    <li><a href="manage_customers.html">Customers</a></li>
+                    <li><a href="manage_orders.html">Orders</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Edit Customer</h2>
+            <form action="update_customer.html" method="POST">
+                <input type="hidden" name="customer-id" value="1"> <!-- Hidden field to pass the customer ID -->
+
+                <label for="customer-name">Name:</label>
+                <input type="text" id="customer-name" name="customer-name" value="John Doe" required>
+
+                <label for="customer-email">Email:</label>
+                <input type="email" id="customer-email" name="customer-email" value="john@example.com" required>
+
+                <label for="customer-phone">Phone:</label>
+                <input type="tel" id="customer-phone" name="customer-phone" value="(123) 456-7890" required>
+
+                <label for="customer-address">Address:</label>
+                <textarea id="customer-address" name="customer-address" rows="4" required>123 Main St, Anytown, USA</textarea>
+
+                <button type="submit" class="btn">Update Customer</button>
+            </form>
+
+            
+        </div>
+    </main>
+
+    <!-- Include Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2023 My eCommerce Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

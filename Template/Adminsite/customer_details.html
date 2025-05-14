@@ -1,0 +1,93 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Details - My eCommerce Store</title>
+    <link rel="stylesheet" href="../css/customer_details.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <!-- Include Header -->
+    <header>
+        <div class="header-container">
+            <h1 class="logo">Admin Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="manage_products.html">Manage Products</a></li>
+                    <li><a href="manage_categories.html">Manage Categories</a></li>
+                    <li><a href="manage_customers.html">Manage Customers</a></li>
+                    <li><a href="manage_orders.html">Manage Orders</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Customer Details</h2>
+            <div class="customer-info">
+                <h3>Basic Information</h3>
+                <p><strong>Name:</strong> John Doe</p>
+                <p><strong>Email:</strong> john@example.com</p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Address:</strong> 123 Main St, Anytown, USA</p>
+            </div>
+
+            <div class="order-history">
+                <h3>Order History</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Date</th>
+                            <th>Total</th>
+                            <th>Status</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1001</td>
+                            <td>2024-01-15</td>
+                            <td>$150.00</td>
+                            <td>Shipped</td>
+                            <td><a href="order_details.html?id=1001" class="details-link">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>1002</td>
+                            <td>2024-02-20</td>
+                            <td>$75.00</td>
+                            <td>Delivered</td>
+                            <td><a href="order_details.html?id=1002" class="details-link">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>1003</td>
+                            <td>2024-03-05</td>
+                            <td>$200.00</td>
+                            <td>Pending</td>
+                            <td><a href="order_details.html?id=1003" class="details-link">View</a></td>
+                        </tr>
+                        <!-- More orders can be added here -->
+                    </tbody>
+                </table>
+            </div>
+
+            <button class="btn" onclick="window.location.href='manage_customers.html'">Back to Customers</button>
+        </div>
+    </main>
+
+    <!-- Include Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2023 My eCommerce Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

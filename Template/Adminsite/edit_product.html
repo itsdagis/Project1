@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Product - My eCommerce Store</title>
+    <link rel="stylesheet" href="../css/edit_product.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1 class="logo">Admin Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Home</a></li>
+                    <li><a href="manage_products.html">Products</a></li>
+                    <li><a href="manage_categories.html">Categories</a></li>
+                    <li><a href="manage_customers.html">Customers</a></li>
+                    <li><a href="manage_orders.html">Orders</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Edit Product</h2>
+            <form action="update_product.html" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="product-id" value="1"> <!-- Hidden field to pass the product ID -->
+
+                <label for="product-name">Product Name:</label>
+                <input type="text" id="product-name" name="product-name" value="Product A" required>
+
+                <label for="product-description">Description:</label>
+                <textarea id="product-description" name="product-description" rows="4" required>Sample description for the product.</textarea>
+
+                <label for="product-price">Price ($):</label>
+                <input type="number" id="product-price" name="product-price" step="0.01" value="10.00" required>
+
+                <label for="product-category">Category:</label>
+                <select id="product-category" name="product-category" required>
+                    <option value="">Select a category</option>
+                    <option value="category1" selected>Category 1</option>
+                    <option value="category2">Category 2</option>
+                    <option value="category3">Category 3</option>
+                </select>
+
+                <label for="product-stock">Stock:</label>
+                <input type="number" id="product-stock" name="product-stock" value="100" required>
+
+                <label for="product-images">Image Uploads (you can upload up to 4 images):</label>
+                <input type="file" id="product-images" name="product-images[]" accept="image/*" multiple>
+
+                <button type="submit" class="btn">Update Product</button>
+            </form>
+
+            <h3>Current Images:</h3>
+            <div class="image-preview">
+                <img src="uploads/image1.jpg" alt="Product Image 1">
+                <img src="uploads/image2.jpg" alt="Product Image 2">
+                <img src="uploads/image3.jpg" alt="Product Image 3">
+                <img src="uploads/image4.jpg" alt="Product Image 4">
+                <!-- More images can be displayed here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Include Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2023 My eCommerce Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Categories - My eCommerce Store</title>
+    <link rel="stylesheet" href="../css/manage_categories.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <!-- Include Header -->
+     <!-- Include Header -->
+     <div>
+        <header>
+            <div class="header-container">
+                <h1 class="logo">Admin Dashboard</h1>
+                <nav>
+                    <ul>
+                        <li><a href="dashboard.html">Home</a></li>
+                        <li><a href="manage_products.html">Products</a></li>
+                        <li><a href="manage_categories.html">Categories</a></li>
+                        <li><a href="manage_customers.html">Customers</a></li>
+                        <li><a href="manage_orders.html">Orders</a></li>
+                        <li><a href="reports.html">Reports</a></li>
+                        <li><a href="logout.html">Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <div class="container">
+            
+            <button class="btn" onclick="window.location.href='add_category.html'">Add New Category</button>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category ID</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Electronics</td>
+                        <td>Devices and gadgets</td>
+                        <td>
+                            <a href="edit_category.html?id=1" class="edit-link">Edit</a>
+                            <a href="#" onclick="confirmDelete(1)" class="delete-link">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Clothing</td>
+                        <td>Apparel and accessories</td>
+                        <td>
+                            <a href="edit_category.html?id=2" class="edit-link">Edit</a>
+                            <a href="#" onclick="confirmDelete(2)" class="delete-link">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Home & Garden</td>
+                        <td>Furniture and outdoor</td>
+                        <td>
+                            <a href="edit_category.html?id=3" class="edit-link">Edit</a>
+                            <a href="#" onclick="confirmDelete(3)" class="delete-link">Delete</a>
+                        </td>
+                    </tr>
+                    <!-- More categories can be added here -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Include Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2023 My eCommerce Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function confirmDelete(categoryId) {
+            const confirmation = confirm("Are you sure you want to delete this category?");
+            if (confirmation) {
+                // Logic to delete the category (e.g., send a request to the server)
+                alert("Category " + categoryId + " deleted.");
+                // Refresh the page or remove the row from the table
+            }
+        }
+    </script>
+
+</body>
+</html>

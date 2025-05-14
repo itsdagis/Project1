@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Process - My eCommerce Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/checkout.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1><a href="home.html">My eCommerce Store</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart <span class="cart-badge">4</span></a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                   
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">John Doe</a> <!-- Replace with dynamic full name -->
+                        <div class="dropdown-content">
+                            <a href="">John Doe</a>
+                            <hr>
+                            <a href="settings.html">Settings</a>
+                            <hr>
+                            <a href="logout.html">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="payment-container">
+            <h2>Payment Process</h2>
+            <div class="order-summary">
+         
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Product Name 1</td>
+                            <td>2</td>
+                            <td>$39.98</td>
+                        </tr>
+                        <tr>
+                            <td>Product Name 2</td>
+                            <td>1</td>
+                            <td>$19.99</td>
+                        </tr>
+                        <tr>
+                            <td>Product Name 3</td>
+                            <td>3</td>
+                            <td>$59.97</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="2">Total</th>
+                            <th>$119.94</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <button type="button" class="btn" onclick="payNow()">Pay Now</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My eCommerce Store. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function payNow() {
+            // Redirect to payment processing page or perform payment action
+            alert("Payment processing initiated.");
+            // window.location.href = 'process_payment.php'; // Uncomment and edit for actual processing
+        }
+    </script>
+
+</body>
+</html>

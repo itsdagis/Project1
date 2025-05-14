@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - My eCommerce Store</title>
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1><a href="home.html">My eCommerce Store</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+<main>
+    
+       
+            <div class="profile-container">
+            <div class="profile-form">
+                <h2>User Profile</h2>
+                <form action="update_profile.html" method="POST">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" value="John Doe" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="john.doe@example.com" required>
+    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" value="+1234567890" required>
+    
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="4" required>123 Main St, City, Country</textarea>
+    
+                    <button type="submit" class="btn">Update Profile</button>
+                </form>
+    
+            </div>
+            </div>
+   
+      
+            
+        <div class="transaction-history profile-container">
+       
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Item</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2023-10-01</td>
+                        <td>Wireless Headphones</td>
+                        <td>$89.99</td>
+                    </tr>
+                    <tr>
+                        <td>2023-09-15</td>
+                        <td>Smartphone Case</td>
+                        <td>$19.99</td>
+                    </tr>
+                    <tr>
+                        <td>2023-08-24</td>
+                        <td>Bluetooth Speaker</td>
+                        <td>$49.99</td>
+                    </tr>
+                    <tr>
+                        <td>2023-07-30</td>
+                        <td>Laptop Stand</td>
+                        <td>$29.99</td>
+                    </tr>
+                    <!-- Add more transactions as needed -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2023 My eCommerce Store. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
